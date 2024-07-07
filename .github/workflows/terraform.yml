@@ -50,6 +50,6 @@ jobs:
  #     env:
  #       GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
     - name: Terraform destroy
-      run: terraform destroy  -auto-approve -input=false
+      run: terraform destroy  --force -auto-approve 
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
