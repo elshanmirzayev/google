@@ -1,3 +1,10 @@
+terraform {
+    backend "gcs" { 
+      bucket  = "tfstate-elshan"
+      prefix  = "prod"
+    }
+}
+
 provider "google" {
   project = var.project
   region  = var.region
