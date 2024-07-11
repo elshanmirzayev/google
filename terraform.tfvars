@@ -1,3 +1,3 @@
 # terraform.tfvars
-project = "coherent-emblem-428504-m9"
+project = "elshan-428711"
 region  = "us-central1"  
